@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('foo', function () {
-    return 'Hello World';
-});
+//文章列表页
+Route::get('/posts','Postcontroller@index');
+//文字详情页
+Route::post('/posts','PostController@show');
+//创建文章
+Route::get('/posts/create','PostController@create');
+//创建逻辑
+Route::
