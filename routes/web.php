@@ -18,4 +18,3 @@ Route::post('/posts','PostController@show');
 //创建文章
 Route::get('/posts/create','PostController@create');
 //创建逻辑
-Route::
