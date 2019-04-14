@@ -12,7 +12,7 @@ class PostController extends Controller
     }
     //文章详情页
     public function show(){
-
+        return view('post/show');
     }
     //文章创建
     public function create(){
